@@ -1,0 +1,465 @@
+/* =========================================================
+   NCERT PAGE
+   Designed to visually match the PYQ page
+   ========================================================= */
+
+.ncert-selection-page,
+.ncert-question-page {
+    min-height: calc(100vh - 68px);
+    background: #f4f6f9;
+    padding: 32px 20px 60px;
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.ncert-container {
+    width: min(1050px, 100%);
+    margin: 0 auto;
+}
+
+/* =========================================================
+   BACK BUTTON
+   ========================================================= */
+
+.ncert-back-button {
+    border: none;
+    background: transparent;
+    color: #3267e8;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0;
+    margin-bottom: 26px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.ncert-back-button:hover {
+    color: #1d4ed8;
+    transform: translateX(-2px);
+}
+
+/* =========================================================
+   SELECTION HEADING
+   ========================================================= */
+
+.ncert-selection-heading {
+    margin-bottom: 30px;
+}
+
+.ncert-selection-label {
+    display: inline-block;
+    color: #3267e8;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.ncert-selection-heading h1 {
+    margin: 0;
+    color: #111827;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 750;
+    letter-spacing: -0.6px;
+}
+
+.ncert-selection-heading p {
+    margin: 8px 0 0;
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   CARD LIST
+   ========================================================= */
+
+.ncert-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* =========================================================
+   NCERT CARD
+   ========================================================= */
+
+.ncert-list-card {
+    width: 100%;
+    min-height: 78px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 15px 18px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.18s ease,
+        border-color 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+.ncert-list-card:hover {
+    transform: translateY(-2px);
+    border-color: #cbd5e1;
+
+    box-shadow:
+        0 8px 24px rgba(15, 23, 42, 0.07);
+}
+
+.ncert-list-card:active {
+    transform: translateY(0);
+}
+
+/* =========================================================
+   CARD ICON / NUMBER
+   ========================================================= */
+
+.ncert-card-icon {
+    width: 46px;
+    height: 46px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 15px;
+
+    border-radius: 10px;
+
+    background: #eef4ff;
+    color: #3267e8;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.ncert-card-icon span {
+    line-height: 1;
+}
+
+.ncert-language-icon {
+    font-size: 20px;
+}
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.ncert-card-content {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    flex: 1;
+}
+
+.ncert-card-content strong {
+    color: #111827;
+    font-size: 16px;
+    line-height: 1.35;
+    font-weight: 650;
+}
+
+.ncert-card-content span {
+    color: #8a94a6;
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+/* =========================================================
+   ARROW
+   ========================================================= */
+
+.ncert-card-arrow {
+    flex-shrink: 0;
+
+    margin-left: 15px;
+
+    color: #9ca3af;
+
+    font-size: 21px;
+    font-weight: 400;
+
+    transition:
+        color 0.18s ease,
+        transform 0.18s ease;
+}
+
+.ncert-list-card:hover .ncert-card-arrow {
+    color: #3267e8;
+    transform: translateX(3px);
+}
+
+/* =========================================================
+   QUESTION PAGE HEADER
+   ========================================================= */
+
+.ncert-question-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 30px;
+
+    padding: 24px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+.ncert-eyebrow {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #3267e8;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.ncert-question-header h1 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 28px;
+    line-height: 1.25;
+    font-weight: 750;
+
+    letter-spacing: -0.4px;
+}
+
+.ncert-question-header p {
+    margin: 7px 0 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+/* =========================================================
+   QUESTION COUNT
+   ========================================================= */
+
+.ncert-question-count {
+    min-width: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 18px;
+
+    border-radius: 10px;
+
+    background: #eef4ff;
+}
+
+.ncert-question-count strong {
+    color: #3267e8;
+
+    font-size: 25px;
+    line-height: 1.1;
+    font-weight: 750;
+}
+
+.ncert-question-count span {
+    margin-top: 4px;
+
+    color: #64748b;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* =========================================================
+   QUESTIONS
+   ========================================================= */
+
+.ncert-questions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* =========================================================
+   LOADING
+   ========================================================= */
+
+.ncert-loading-box {
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+
+    background: #ffffff;
+}
+
+.ncert-loading-box p {
+    margin: 14px 0 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+/* =========================================================
+   SPINNER
+   ========================================================= */
+
+.ncert-spinner {
+    width: 30px;
+    height: 30px;
+
+    border: 3px solid #e5e7eb;
+    border-top-color: #3267e8;
+
+    border-radius: 50%;
+
+    animation: ncert-spin 0.8s linear infinite;
+}
+
+@keyframes ncert-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+.ncert-error-box {
+    padding: 15px 18px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #fecaca;
+    border-radius: 10px;
+
+    background: #fef2f2;
+
+    color: #b91c1c;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+    .ncert-selection-page,
+    .ncert-question-page {
+        padding: 22px 14px 45px;
+    }
+
+    .ncert-selection-heading {
+        margin-bottom: 22px;
+    }
+
+    .ncert-selection-heading h1 {
+        font-size: 28px;
+    }
+
+    .ncert-selection-heading p {
+        font-size: 14px;
+    }
+
+    .ncert-list-card {
+        min-height: 70px;
+        padding: 12px 13px;
+    }
+
+    .ncert-card-icon {
+        width: 40px;
+        height: 40px;
+
+        margin-right: 12px;
+    }
+
+    .ncert-card-content strong {
+        font-size: 15px;
+    }
+
+    .ncert-card-content span {
+        font-size: 12px;
+    }
+
+    .ncert-question-header {
+        align-items: flex-start;
+        flex-direction: column;
+
+        padding: 18px;
+
+        gap: 18px;
+    }
+
+    .ncert-question-header h1 {
+        font-size: 23px;
+    }
+
+    .ncert-question-count {
+        width: 100%;
+        min-width: 0;
+
+        flex-direction: row;
+        gap: 8px;
+
+        justify-content: flex-start;
+    }
+
+    .ncert-question-count strong {
+        font-size: 21px;
+    }
+
+    .ncert-question-count span {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .ncert-selection-heading h1 {
+        font-size: 25px;
+    }
+
+    .ncert-card-arrow {
+        font-size: 18px;
+    }
+}
